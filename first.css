@@ -15,7 +15,7 @@ body {
     margin: auto;
 }
 
-/* ===== Desktop: Above 1000px ===== */
+
 
 .head {
     display: flex;
@@ -71,7 +71,7 @@ img[alt="burger"] {
 }
 
 
-/* ===== Tablet: 769px - 1000px ===== */
+
 
 @media (max-width: 1000px) and (min-width: 769px) {
 
@@ -103,7 +103,7 @@ img[alt="burger"] {
 }
 
 
-/* ===== Mobile: 768px and below ===== */
+
 
 @media (max-width: 768px) {
 
@@ -138,7 +138,7 @@ img[alt="burger"] {
 }
 
 
-/* ===== Very small mobile: 400px and below ===== */
+
 
 @media (max-width: 400px) {
 
