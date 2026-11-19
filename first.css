@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F3;
+}
+
+.container {
+    width: calc(100% - 96px);
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* ===== Desktop: Above 1000px ===== */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    gap: 25px;
+}
+
+.head img[alt="logo"] {
+    width: 228px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.head nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.head a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.head a:hover {
+    text-decoration: underline;
+    color: orange;
+    transform: translateY(-3px);
+}
+
+.head button {
+    width: 101px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2B1B17;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.head button:hover {
+    background-color: blue;
+}
+
+img[alt="burger"] {
+    display: none;
+}
+
+
+/* ===== Tablet: 769px - 1000px ===== */
+
+@media (max-width: 1000px) and (min-width: 769px) {
+
+    .container {
+        width: calc(100% - 48px);
+    }
+
+    .head {
+        gap: 15px;
+    }
+
+    .head img[alt="logo"] {
+        width: 170px;
+        height: 30px;
+    }
+
+    .head nav {
+        gap: 18px;
+    }
+
+    .head a {
+        font-size: 14px;
+    }
+
+    .head button {
+        width: 90px;
+        flex-shrink: 0;
+    }
+}
+
+
+/* ===== Mobile: 768px and below ===== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .head {
+        padding-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .head img[alt="logo"] {
+        width: 150px;
+        height: 30px;
+    }
+
+    .head nav {
+        display: none;
+    }
+
+    .head button {
+        display: none;
+    }
+
+    img[alt="burger"] {
+        display: block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+}
+
+
+/* ===== Very small mobile: 400px and below ===== */
+
+@media (max-width: 400px) {
+
+    .head img[alt="logo"] {
+        width: 133px;
+        height: 28px;
+    }
+
+    img[alt="burger"] {
+        width: 23px;
+        height: 23px;
+    }
+}
